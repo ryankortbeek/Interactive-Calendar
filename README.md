@@ -116,4 +116,4 @@ Notes, Assumptions, and Bugs:
 
             - If a user enters only the name of a month when asked for the date, the program will not assign any Day to that event. However if the user enters just a weekday (ex. monday), our program is designed to understand and correctly handle this case.
 
-    - Certain keystrokes (ex: the shift or caps lock key) cause errors in the way typing input is displayed in the pygame window, however this is only a visual bug. I.e. an input may appear to have a large space when displayed while the user is typing it on the screen however the string that our program reads will not contain this space.
+            - Certain keystrokes (ex: the shift or caps lock key) cause errors in the way typing input is displayed in the pygame window, however this is only a visual bug. I.e. an input may appear to have a large space when displayed while the user is typing it on the screen however the string that our program reads will not contain this space.
