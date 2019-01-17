@@ -17,6 +17,7 @@ Included Files:
 
 
 Acknowledgments:
+
     - ASCII character face found online at: 
       https://www.dreamstime.com/stock-photos-ascii-face-image1528033
     - Used pygame and datetime modules to implement our program
