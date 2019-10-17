@@ -1,5 +1,7 @@
 # Interactive-Calendar
 
+Created by: Ryan Kortbeek and Justin Boileau
+
 Included Files:
 
     - VA.py
