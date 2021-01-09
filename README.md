@@ -1,73 +1,56 @@
-Project: Virtual Assistant
+# Interactive-Calendar
+Interactive-Calendar is a UI with a dynamic calendar-like layout that allows events to be created and viewed. Compatible with Ubuntu 16.04 and 18.04 operating 
+systems. 
 
-- Written by Ryan Kortbeek and Justin Boileau
+## Developers
+- Ryan Kortbeek
+- Justin Boileau
 
-Included Files:
+## Included Files:
+- VA.py
+- displays.py
+- events.py
+- setup.py
+- face.png
+- face1.png
+- README
 
-    - VA.py
-    - displays.py
-    - events.py
-    - setup.py
-    - face.png
-    - face1.png
-    - README
+The following files are created after the intial running of the program:
+- config and userevents directory
+- alias.txt (in config directory)
+- settings.txt (in config directory)
+- Various event files in the form MonthDayYear (ex. 1222018.txt contains the event information for December 12th, 2018), (in userevents directory)
 
-    The following files are created after the intial running of the program:
+## Acknowledgments:
+- ASCII character face found online [here](https://www.dreamstime.com/stock-photos-ascii-face-image1528033)
+- Used pygame and datetime modules to implement our program
+- Used the [pygame documentation](https://www.pygame.org/docs/) to learn about certain functions:
 
-    - config and userevents directory
-    - alias.txt (in config directory)
-    - settings.txt (in config directory)
-    - Various event files in the form MonthDayYear (ex. 1222018.txt contains the event information for December 12th, 2018), (in userevents directory)
+## Running Instructions:
+- Our program is meant to be running on a Ubuntu operating system through the terminal
+- Prior to using our program the user must install pygame, this is most easily done using PIP, instructions to do so are as follows:
 
+`pip install pygame` | `pip3 install pygame`
 
-Acknowledgments:
-    - ASCII character face found online at:
-      https://www.dreamstime.com/stock-photos-ascii-face-image1528033
-    - Used pygame and datetime modules to implement our program
-    - Used the pygame documentation to learn about certain functions:
-      https://www.pygame.org/docs/
+- Download all files from the "Included Files" section and place them in the same directory
+- Within terminal, navigate to the directory containing the files and enter:
 
+`python3 VA.py`
 
-Running Instructions:
-
-    - Our program is meant to be running on a Ubuntu operating system through the terminal
-
-    - Prior to using our program the user must install pygame, this is most easily done using PIP, instructions to do so are as follows:
-
-        - Within terminal, enter the following two lines separately:
-            - "sudo apt-get install python3-pip"
-            - "sudo pip3 install pygame"
-
-    - Download all files from the "Included Files" section and place them in the same directory
-
-    - Within terminal, navigate to the directory containing the files and enter:
-
-        "python3 VA.py"
-
-    - This will open the main menu and create the additional files in which user data and settings will be stored
-
-    - From main menu, the user has 4 options which are selected by pressing keys 1-4:
-
-        - (1) New Event : User can enter new events with desired name, date, time, location, and notes. All of these inputs are compared to the standard and user specific alias dictionary for any similarities.
-
-        - (2) Todays's Schedule : User can view their schedule for the current day, up to 4 events.
-
-        - (3) This Week's Schedule : User can view an overview of their schedule for the entire week.
-
-        - (4) Settings : User can navigate to this menu and select either of the following:
-
-            - (1) Name of virtual assistant : Upon selection of this option the user will be promoted to change the name of their virtual assistant
-
-            - (2) Add Alias : Upon selection of this option the user will be prompted to enter a word followed by an alias for their virtual assistant to associate with that word when the user is creating new events
-
+- This will open the main menu and create the additional files in which user data and settings will be stored
+- From main menu, the user has 4 options which are selected by pressing keys 1-4:
+    1. New Event : User can enter new events with desired name, date, time, location, and notes. All of these inputs are compared to the standard and user specific alias dictionary for any similarities.
+    2. Todays's Schedule : User can view their schedule for the current day, up to 4 events.
+    3. This Week's Schedule : User can view an overview of their schedule for the entire week.
+    4. Settings : User can navigate to this menu and select either of the following:
+        1. Name of virtual assistant : Upon selection of this option the user will be promoted to change the name of their virtual assistant
+        2. Add Alias : Upon selection of this option the user will be prompted to enter a word followed by an alias for their virtual assistant to associate with that word when the user is creating new events
+    
     - The user can press the escape key at any time to return to the main menu
-
     - The user can click the "X" circle in the top left corner of the window to close their virtual assistant
-
     - The virtual assistant can be used again anytime by navigating to the same directory and enter "python3 VA.py" the same way as before. Previous events, alias', and the virtual assistant name will still be available assuming the files storing them have not been moved or deleted.
 
-
-Functionality:
+## Functionality:
 
     - Supported input forms:
 
@@ -103,7 +86,7 @@ Functionality:
             specified for both the start and end time values (i.e. 11:30 - 4:30 PM is taken to mean 11:30 AM - 4:30 PM)
 
 
-Notes, Assumptions, and Bugs:
+## Notes, Assumptions, and Bugs:
 
     - When the user is entering events, it is assumed that they are typing in English with basic grammatical correctness (spaces between words)
 
